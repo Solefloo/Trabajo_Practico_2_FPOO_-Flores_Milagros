@@ -20,6 +20,7 @@ public void draw(){
    if(joyPad.isUpPressed()){
      shooter.mover(0);
    }
+   if(joyPad.isRightPressed()){
      shooter.mover(1);
    }
    if(joyPad.isDownPressed()){
