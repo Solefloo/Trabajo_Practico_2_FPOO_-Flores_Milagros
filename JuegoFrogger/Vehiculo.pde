@@ -1,0 +1,2 @@
+class Vehiculo extends GameObject{
+}

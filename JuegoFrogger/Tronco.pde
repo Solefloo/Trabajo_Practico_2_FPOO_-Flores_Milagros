@@ -1,0 +1,2 @@
+class Tronco extends GameObject{
+}
