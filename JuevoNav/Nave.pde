@@ -17,8 +17,15 @@ class Nave extends GameObject implements IController{
   public void disparar(SpawnerBala spanerBala){
   }
   
-  public void mover(){
+  public void mover(int direccion){
+    if(direccion==0){
+      this.posicion.x-=this.velocidad.x;
+    }
+    if(direccion==1){
+      this.posicion.x+=this.velocidad.x;
+    }
   }
+  
   public void readCommand(){
   }
 }

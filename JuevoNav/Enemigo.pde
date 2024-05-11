@@ -12,7 +12,7 @@ class Enemigo extends GameObject{
   //Metodos
   public void display(){
     imageMode(CENTER);
-    image(imagen,this.posicion.x,this.posicion.y,140,140);
+    image(imagen,this.posicion.x,this.posicion.y,130,130);
   }
     public void mover(){
     if(this.posicion.y<=height){
