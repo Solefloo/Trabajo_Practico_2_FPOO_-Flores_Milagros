@@ -14,7 +14,16 @@ class Nave extends GameObject implements IController{
     imageMode(CENTER);
     image(imagen,this.posicion.x,this.posicion.y,150,150);
   }
-  public void disparar(SpawnerBala spanerBala){
+  public void disparar(SpawnerBala spawnerBala){
+    Bala otherBala = new Bala(new PVector(this.posicion.x,this.posicion.y));
+    Bala[] balas = spawnerBala.getBalas();
+    for(int i=0;i<balas.length;i++){
+      if(balas[i]==null){
+        balas[i]=otherBala;
+        break;
+      }
+    }
+    spawnerBala.setBalas(balas);    
   }
   
   public void mover(int direccion){
@@ -28,4 +37,8 @@ class Nave extends GameObject implements IController{
   
   public void readCommand(){
   }
+  //Metodo accesor
+ /** public PVector getPosicion(){
+    return this.posicion;
+  }  */
 }
