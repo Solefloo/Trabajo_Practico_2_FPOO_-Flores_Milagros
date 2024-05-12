@@ -1,4 +1,4 @@
-/**class SpawnerDado {
+class SpawnerDado {
   private Dado [] dados;
   
   public SpawnerDado(){
@@ -7,19 +7,20 @@
   
   
  
-  public void vizulizarDado(){
+  public void visualizarDado(){
     for(Dado d:dados){
       if(d!=null){
         d.display();
+//d.crearCirculos();
       }
     }
   }
   public Dado[] getDados(){
-    return this.Sdados;
+    return this.dados;
   }
   
   public void setDados(Dado[] dados){
     this.dados=dados;
   }  
 
-}*/
+}

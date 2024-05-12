@@ -11,7 +11,7 @@ class Dado extends GameObject{
     this.alto=alto;
   }
  
-  }
+  
  
   public void display(){
     fill(colorObj); 
@@ -74,13 +74,13 @@ class Dado extends GameObject{
  
   
     
-  public Dado[] getDados(){
+ /** public Dado[] getDados(){
     return this.dados;
   }
   
   public void setDados(Dado[] dados){
     this.dados=dados;
-  }  
+  }  */
   
 
 }

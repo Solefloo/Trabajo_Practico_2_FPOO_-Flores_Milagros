@@ -4,5 +4,5 @@ abstract class GameObject {
   protected int ancho;
   protected int alto;
 }
-public abstract void display(){
+ public void display(){
 }
